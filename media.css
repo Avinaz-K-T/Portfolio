@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+}
+/* #container{
+    width: 100% ;
+    min-height: 100vh;
+} */
+body{
+    background:url('https://i.pinimg.com/originals/fa/c0/5c/fac05c110c458e9bab3a3248bfb3c376.jpg') ;
+    min-height: 100vh;
+    background-size: cover;
+}
+.header{
+    width: 100%;
+    background-color: blue;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:68px ;
+    padding: 5px;
+}
+.Logo{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+#check{
+    display: none;
+}
+
+#contents{
+    margin-top: 70px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 18px;
+
+    font-size: bold;
+}
+h1{
+    color: white;
+}
+p{
+    font-size: 1rem;
+    line-height: 1.2;
+    color: white;
+}
+.header .icons{
+    font-size: 2.8rem;
+    color: white;
+    position: absolute;
+    right: 5%;
+    display: none;
+
+}
+.header .close{
+    font-size: 2.8rem;
+    color: white;
+    position: absolute;
+    right: 5%;
+    display: none;
+
+}
+/* .header .search{
+    font-size: 1.4rem;
+    color: white;
+    position: absolute;
+    top: 6%;
+    right: 1.5%;
+    display: block;
+
+} */
+
+
+.flex-container{
+    width: 100%;
+    height: 500px;
+    display:flex ;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.flex-item{
+    height: 350px;
+    width: 250px;
+    border: 2px solid black;
+    margin-top: 10px;
+
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+/* general breakpoints
+
+small screen-480px
+medium screen-768px
+large screen-992px
+xl screen-1280px
+*/
+
+@media (max-width:480px){
+    p{
+        font-size: 2rem;
+        line-height: 1.5;
+
+    }
+    .flex-item{
+        margin-top: 15px;
+    }
+}
+@media (max-width:768px){
+   .header .icons{
+    display: block;
+   }
+   nav{
+    position: absolute;
+    top: 100%;
+    background-color: brown;
+    width: 100%;
+    left: 0;
+    display: none;
+   }
+
+   a{
+    display: block;
+    text-align: center;
+    font-size: 1.1rem ;
+    margin: 1.1rem 0px;
+   }
+   #check:checked~nav{
+    display: block;
+   }
+   #check:checked~label .icons{
+    display: none;
+
+   }
+   #check:checked~label .close{
+    display: block;
+}
+}

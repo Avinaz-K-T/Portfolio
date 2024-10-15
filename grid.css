@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+}
+.bt{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 20px;
+    align-items: center;
+    gap: 2rem;
+}
+{
+    width: 100%;
+}
